@@ -22,3 +22,7 @@ PSR (PHP Standards Recommendations)
 - クラス定数はすべて大文字、区切りはアンダースコア
 - すべてのプロパティ/メソッドにアクセス修飾子をつける
 - abstract, final修飾子はアクセス修飾子よりも前に記述
+
+$ php -a
+=> interactive shell が使える
+セミコロン必須なので気をつけること
