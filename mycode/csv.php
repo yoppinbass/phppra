@@ -9,6 +9,14 @@ while ($line = fgetcsv($file, 1024, ',')) {
     $data[] = $item;
 }
 
-print_r($data);
+function show($data) {
+    foreach ($data as $item) {
+        echo "\n";
+        foreach ($item as $i) {
+            echo $i . "\t";
+        }
+    }
+}
+show($data);
 flock($file, LOCK_UN);
 fclose($file);
